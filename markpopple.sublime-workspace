@@ -1,0 +1,382 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"y",
+				"sys.debug(x);"
+			],
+			[
+				"empt",
+				"emptyHand"
+			],
+			[
+				"Fire",
+				"Fire2"
+			],
+			[
+				"G",
+				"GetButton"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Package Control Messages\n========================\n\nSFTP:\n----\n\n  Thanks for installing Sublime SFTP! Below are some quick notes to get you\n  started with the plugin. Please see http://wbond.net/sublime_packages/sftp for\n  the full documentation.\n  \n  \n  There are two major modes of operation:\n  1. Mapping a local folder to a remote folder\n  2. Working off of a server\n  \n  \n  Mapping a Local Folder to a Remote Folder\n  ----\n  \n  To map a local folder to a remote folder, right-click on it in the side bar\n  and select the SFTP/SFTP > Map to Remote... You will enter your connection\n  parameters and a new file will be created named sftp-config.json.\n  \n  Once this file has been saved, all files in that folder and all subfolders\n  will have various operations available via the side bar context menu, editor\n  context menu and command palette.\n  \n  \n  Working off of a Server\n  ----\n  \n  To work off of a server, use the File menu and select SFTP/FTP > Setup Server...\n  You will enter your connection parameters and options then save the file with\n  the name you want to give the connection.\n  \n  Once the server config is saved, you will be automatically connected to the\n  server and you can browse and perform actions via the quick panel.\n  \n  Unfortunely due to limitations of the Sublime Text 2 API, it is not possible\n  to present the remote filesystem in the side bar. There are, however, key\n  bindings for connecting to servers to help reduce the amount of time remote\n  file operations take.\n  \n  \n  Support\n  ----\n  \n  To learn more about the features and settings, please visit\n  http://wbond.net/sublime_packages/sftp.\n  \n  If you are having trouble, please contact me at support@wbond.net. The Support\n  page, http://wbond.net/sublime_packages/sftp/support, includes instructions\n  for capturing a debug log that will be useful if you believe you are\n  experiencing a bug.\n  \n\n\nUnrealScriptIDE:\n---------------\n\n  =================================\n  UnrealScript IDE has been updated\n  =================================\n  \n  New Stuff:\n  ----------\n  * **Read the NOTE below - rebuild cache!**\n  \n  * **UnrealDebugger Improvements**\n    * UnrealDebugger got a small update, allowing you to deactivate the first \"invisible\" breakpoint.\n      This will be used as the default setting from now on.\n      You can change that in the settings if you like.\n  \n  * **More Settings exposed**\n    * You can now add additional map extensions\n    * You can now specify your own keywords to use for auto-completion\n  \n  * **Added live build output**\n    * Its a little bit buggy, but it works.\n  \n  * **some bug fixing (one of them requires you to rebuild the cache file)**\n    * I tried to fix the \"just a moment...\" bug again, hope I was lucky this time ;-)\n  \n  NOTE\n  ----\n  \n    Again, this update requires you to rebuild your cache file:\n    This can be done using 'Tools' -> 'UnrealScript IDE: Rebuild Cache' or ctrl + shift + p -> search for 'rebuild cache' -> hit enter.\n  \n  ----------\n  \n  Read the wiki: https://github.com/Zinggi/UnrealScriptIDE/wiki\n\n  =================================\n  UnrealScript IDE has been updated\n  =================================\n  \n  New Stuff:\n  ----------\n  * **Read the NOTE below - rebuild cache!**\n  \n  * **Bug fixes and minor Improvements**\n    * fixed the \"just a moment...\" issue.\n      (see: http://forums.epicgames.com/threads/940192-UnrealScript-IDE-for-Sublime-Text-2-NEW-Debugger?p=31317709&viewfull=1#post31317709)\n      Not completely fixed, but fixed in most cases.\n    * Added some missing functions (such as spawn)\n    * Added more inbuilt functions (like vect())\n  \n  * **Code Organization and Optimizations**\n    * As the code grew larger and larger I decided to split it up into several logical parts.\n    * The quite ugly function \"save_functions\" was rewritten using regular expressions developed by a friend of mine.\n      Check out his web-page:   http://deserving-better.com/  He'd appreciate some users.\n  \n  NOTE\n  ----\n  \n    Again, this update requires you to rebuild your cache file:\n    This can be done using 'Tools' -> 'UnrealScript IDE: Rebuild Cache' or ctrl + shift + p -> search for 'rebuild cache' -> hit enter.\n  \n  ----------\n  \n  Read the wiki: https://github.com/Zinggi/UnrealScriptIDE/wiki\n\n  =================================\n  UnrealScript IDE has been updated\n  =================================\n  \n  New Stuff:\n  ----------\n  * **Read the NOTE below**\n  \n  * **UnrealDebugger integration**\n    * UnrealDebugger will now be automatically installed when you build your game in debug mode.\n    To do so, press ctrl+alt+b or alt+f7. If you had another debugger (such as NFringe) installed before, it will preserve the shared dll.\n    You can uninstall UnrealDebugger through the command palette (ctrl+shift+p) by searching for \"UnrealScriptIDE: Uninstall UnrealDebugger\". This will restore the dll of your old debugger.\n    * To use it, start your game with a debug configuration\n    * You can set breakpoints directly inside Sublime Text 2 by either using the right click menu or with the shortcut ctrl+. to toggle a breakpoint or ctrl+shift+. to deactivate a breakpoint.\n  \n  * **Optimazations to the parser**\n    * You probably don't even notice anything, however you still need to rebuild your cache, otherwise nothing will work anymore.\n  \n  NOTE\n  ----\n  \n    Again, this update requires you to rebuild your cache file:\n    This can be done using 'Tools' -> 'UnrealScript IDE: Rebuild Cache' or ctrl + shift + p -> search for 'rebuild cache' -> hit enter.\n  \n  ----------\n  \n  Read the wiki: https://github.com/Zinggi/UnrealScriptIDE/wiki\n\n  =================================\n  UnrealScript IDE has been updated\n  =================================\n  \n  New Stuff:\n  ----------\n  \n  * **Support for Structs**\n    * now typing Actor(someActor).Location.* will give you x, y, z as a hint\n    * read the NOTE\n  \n  * **Support for Const**\n    * const variables are now also recognized by my plugin. e.g CONST Pi = 3.1415926535897932;\n  \n  NOTE\n  ----\n  \n    Again, this update requires you to rebuild your cache file:\n    This can be done using 'Tools' -> 'UnrealScript IDE: Rebuild Cache' or ctrl + shift + p -> search for 'rebuild cache' -> hit enter.\n    This may take a while, but it's a one time operation.\n  \n  ----------\n  \n  Read the wiki: https://github.com/Zinggi/UnrealScriptIDE/wiki\n\n  =================================\n  UnrealScript IDE has been updated\n  =================================\n  \n  New Stuff:\n  ----------\n  \n  * **Support for inbuild functions and variables has been added (arrays and class)**\n    * read the note below\n  \n  NOTE\n  ----\n  \n    I usually wouldn't bother you with such a small update, but to enable the support for inbuild functions you have to rebuild your cache file:\n    This can be done using 'Tools' -> 'UnrealScript IDE: Rebuild Cache' or ctrl + shift + p -> search for 'rebuild cache' -> hit enter.\n    This may take a while, but it's a one time operation.\n  \n  ----------\n  \n  Read the wiki: https://github.com/Zinggi/UnrealScriptIDE/wiki\n\n  =================================\n  UnrealScript IDE has been updated\n  =================================\n  \n  New Stuff:\n  ----------\n  \n  * **Fully Object Oriented Auto-Completion**\n    * expressions such as WorldInfo.Game.* will now list you all available completions of the object Game (e.g. Broadcast)\n    * this does also work with function with a return value, e.g:\n      Trace(HitLocation, HitNormal, traceEnd).* would give you suggestions from the Actor class, because trace returns Actor\n    * typecasting is also supported: Pawn(other).* would display completions from the Pawn class.\n  \n  * **Fully Object Oriented Go to Declaration**\n    * Go to Declaration now also works on all expressions where auto-completion works, e.g. using Go to Declaration here:\n      WorldInfo.Game.Broadc|ast(self, \"hello!\") would take you to the line where Broadcast was declared\n  \n  * **Automatic rebuilding of the cache file**\n    * The cache file will now be rebuild automatically when necessary.\n    * The only situation where you have to rebuild the cache file manually is if you delete a class.\n      To do so go to 'Tools' -> 'UnrealScriptIDE: Rebuild Cache' or use Ctrl+Shift+P and search for it.\n    * If you modify a class in another application you need to save this file at least once in Sublime to register your changes.\n  \n  Plans and thoughts about future versions:\n  -----------------------------------------\n  \n  * **Add support for Structs (high priority)**\n    * currently structs aren't supported. e.g. if you type Actor(other).Location.* you won't get x, y, z although you would want to.\n    * same for Enumerations\n  \n  * **Support for local variables**\n    * local variables and function arguments should also appear in the completion list\n  \n  * **live parsing of the current file**\n    * if you have declared a variable such as: var Pawn MyPawn; and immediately afterwards type MyPawn.* it won't give you any suggestions.\n      To get your suggestions you have to save your file first.\n  \n  ----------\n  \n  Read the wiki: https://github.com/Zinggi/UnrealScriptIDE/wiki\n\n  =================================\n  UnrealScript IDE has been updated\n  =================================\n  \n  New Stuff:\n  ----------\n  \n  * **Performance increase**\n    * This comes with a downside of performance decrease at the very first startup, but after that it will be much faster\n    * I'm saving a list of all classes to a cache file at startup, so that I can later load the classes from it.\n      \n      PLEASE NOTE: If you create new class files, modify the file name of your class or modify what your class extends\n      you'll have to delete the cache file to rebuild the class list (and restart Sublime). The cache file is in your Src directory and is named: classes_cache.obj\n  \n  * **Classes auto-completion**\n    * classes do now also appear in the completions list.\n    * especially helpful in the class declaration line when you are thinking about what class to extend.\n  \n  * **Object-oriented go to declaration support**\n    * e.g. activating goto declaration over controller.GetPlayerViewPoint(a, b) will take you to the declaration of GetPlayerViewPoint in Controller\n    * typecasting is not yet supported.\n  \n  Object-oriented Auto-completion is coming soon!!!\n  ----------\n  \n  For an in detail explanation, read the wiki: https://github.com/Zinggi/UnrealScriptIDE/wiki\n\n  =================================\n  UnrealScript IDE has been updated\n  =================================\n  \n  New Stuff:\n  ----------\n  \n  * **Build system**\n    * use Ctrl + B, F7 or search in the command palette to build your game\n    * if the build contains errors, the error log will be opened, allowing you to navigate to your errors quickly.\n    * if the build was successful, the game will start\n  \n  * **Launch Game**\n    * quickly open the game with your last configuration\n    * you can chose witch map to open\n    * chose between Standalone or a Server and 2 Clients\n    * you can specify additional startup settings\n  \n  For an in detail explanation, read the wiki: https://github.com/Zinggi/UnrealScriptIDE/wiki\n",
+			"settings":
+			{
+				"buffer_size": 11204,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/C/Users/upopple/AppData/Roaming/Sublime Text 2/Packages/User/sftp_servers/markpopple",
+			"settings":
+			{
+				"buffer_size": 812,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/users/upopple/appdata/local/temp/sublime-sftp-browse-1367775576/markpopple/wp-content/themes/thematic-markpopple/style.css",
+			"settings":
+			{
+				"buffer_size": 4471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/users/upopple/appdata/local/temp/sublime-sftp-browse-1367776202/markpopple/wp-content/themes/thematic-markpopple/events/events.css",
+			"settings":
+			{
+				"buffer_size": 12190,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"unrealb",
+				"UnrealScriptIDE: Build Project"
+			],
+			[
+				"ubui",
+				"UnrealScriptIDE: Build Project"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 520.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/users/upopple/appdata/local/temp/sublime-sftp-browse-1367774308/markpopple/wp-content/themes/thematic-markpopple/functions.php",
+		"/C/Users/upopple/SkyDrive/NodeJS/node_drawing/assets/js/script.js",
+		"/C/Users/upopple/SkyDrive/NodeJS/node_drawing/folder",
+		"/C/Program Files/Sublime Text 2/subl.bat",
+		"/C/Users/upopple/SkyDrive/Unity/NullGrav/Assets/Scripts/WallWalkMotor.cs",
+		"/C/Users/upopple/Documents/OneArmedBanditHG/Assets/NGUI/Scripts/Interaction/UIButtonKeys.cs",
+		"/C/Users/upopple/AppData/Roaming/Sublime Text 2/Packages/UnrealScriptIDE/log_cache.log",
+		"/C/Users/upopple/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/upopple/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/UDK/UDK-2013-02/UDKGame/Config/DefaultEngine.ini"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"class",
+			"ctrl+B"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 11204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								426,
+								426
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 150.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/upopple/AppData/Roaming/Sublime Text 2/Packages/User/sftp_servers/markpopple",
+					"settings":
+					{
+						"buffer_size": 812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								537,
+								537
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sftp_new_server": null,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/users/upopple/appdata/local/temp/sublime-sftp-browse-1367775576/markpopple/wp-content/themes/thematic-markpopple/style.css",
+					"settings":
+					{
+						"buffer_size": 4471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_remote": true,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tmp_dir": "c:\\users\\upopple\\appdata\\local\\temp\\sublime-sftp-browse-1367775576\\markpopple\\",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/users/upopple/appdata/local/temp/sublime-sftp-browse-1367776202/markpopple/wp-content/themes/thematic-markpopple/events/events.css",
+					"settings":
+					{
+						"buffer_size": 12190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_remote": true,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tmp_dir": "c:\\users\\upopple\\appdata\\local\\temp\\sublime-sftp-browse-1367776202\\markpopple\\",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5306.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.UnrealScriptAutocomplete_panel":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 289.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/upopple/AppData/Roaming/Sublime Text 2/Packages/User/sftp_servers/markpopple"
+			],
+			[
+				"thir",
+				"Assets/Scripts/ThirdPersonController.cs"
+			],
+			[
+				"deck",
+				"Assets/Scripts/Deck.cs"
+			],
+			[
+				"power",
+				"Assets/Scripts/powerBoost.cs"
+			],
+			[
+				"utweapon",
+				"UTGame/Classes/UTBeamWeapon.uc"
+			],
+			[
+				"utweap",
+				"UTGame/Classes/UTWeapon.uc"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 237.0,
+	"status_bar_visible": true
+}

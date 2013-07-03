@@ -1,0 +1,16 @@
+{
+  "name": "magnet-game",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "Ulysses Popple <ulysses.popple@gmail.com>",
+  "description": "a magnet game",
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies" : {
+    "express"   :  "*",
+    "socket.io" :  "*",
+    "mocha"     :  "*",
+    "chai"      :  "*"
+  }
+}
