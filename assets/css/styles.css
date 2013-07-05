@@ -89,6 +89,17 @@ h3{
 	z-index: 100;
 }
 
+#score  {
+	position: fixed;
+	margin-left: 50px;
+	margin-top: 50px;
+	z-index: 100;
+}
+
+#target  {
+	position: fixed;
+	z-index: 100;
+}
 
 
 /*----------------------------

@@ -1,4 +1,6 @@
-define('Game', ['Magnet', 'PlayingField', 'Vector', 'Kinetic', 'jquery', 'socket'], function(Magnet, PlayingField, Vector, Circle, $, socket) {
+define('Game', ['Magnet', 'PlayingField', 'Vector', 'Kinetic', 'jquery', 'jquery-mobile', 'socket'], 
+	function(Magnet, PlayingField, Vector, Circle, $, jQueryMobile, socket) {
+	
 	var Circle = Kinetic.Circle;
 	$(function(){
 
@@ -30,10 +32,15 @@ define('Game', ['Magnet', 'PlayingField', 'Vector', 'Kinetic', 'jquery', 'socket
 		//Define methods here which cause updates to the html5 canvas and/or the player.pub
 
 		var moveMagnets = function(deltaTime) {
+			score = 0;
 			magnets.forEach(function(magnet) {
 				magnet.reactTo(playerMagnet);
+				score += 1/
+					Math.sqrt(Math.pow(magnet.physics.position.x - magnet.physics.playingField.width/2, 2) 
+						+ Math.pow(magnet.physics.position.y- magnet.physics.playingField.height/2, 2));
 				magnet.update(deltaTime);
 			});
+			$('#score').text('Score: ' + Math.floor(score * 10000));
 		}
 
 		var movePlayerMagnet = function(deltaTime) {
@@ -58,8 +65,8 @@ define('Game', ['Magnet', 'PlayingField', 'Vector', 'Kinetic', 'jquery', 'socket
 
 			stage = new Kinetic.Stage({
 				container: 'stage',
-				width: 1900,
-				height: 1000
+				width: $(document).width(),
+				height: $(document).height()
 			});
 
 			background = new Kinetic.Rect({
@@ -75,7 +82,11 @@ define('Game', ['Magnet', 'PlayingField', 'Vector', 'Kinetic', 'jquery', 'socket
 
 			layer.add(background);
 
-			playingField = new PlayingField();
+			playingField = new PlayingField(0.95, 0.4, stage.getHeight(), stage.getWidth());
+			$("#target").css({
+				'margin-left': stage.getWidth()/2+'px',
+				'margin-top':  stage.getHeight()/2 + 'px'
+			});
 			playerMagnet = new Magnet(playingField, 30, 30, 20, 2, {stroke: 'red'});
 			layer.add(playerMagnet.circle);
 			magnets = new Array();
@@ -139,8 +150,11 @@ define('Game', ['Magnet', 'PlayingField', 'Vector', 'Kinetic', 'jquery', 'socket
 
 			doc.on('mousemove', function(m) {
 				newMousePosition = m;
-			})
+			});
 
+			doc.on('vmousemove', function(t) {
+				newMousePosition = t;
+			});
 			// For example, the following code adds the moveLeft function to the update methods when the left key is pressed down.
 			// doc.on('keydown', function(e){
 			// 	switch(e.keyCode){

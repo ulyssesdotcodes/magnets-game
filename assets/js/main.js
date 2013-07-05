@@ -7,6 +7,7 @@ requirejs.config({
   baseUrl:"/",
   paths: {
     'jquery'           : 'libs/jquery',
+    'jquery-mobile'    : 'libs/jquery.mobile.min',
     'underscore'       : 'libs/underscore-amd',
     'socket'           : '/socket.io/socket.io',
     'Magnet'	         : 'js/magnet',

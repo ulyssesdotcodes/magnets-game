@@ -45,6 +45,13 @@ define('PhysicsObject', ['Vector', 'PlayingField'], function(Vector, PlayingFiel
 
 			this.position.x += Math.round(this.velocity.x);
 			this.position.y += Math.round(this.velocity.y);
+
+			if(this.position.x < 0) this.position.x = 0;
+			else if(this.position.x > this.playingField.width) this.position.x = this.playingField.width;
+
+			if(this.position.y < 0) this.position.y = 0;
+			else if(this.position.y > this.playingField.height) this.position.y = this.playingField.height;
+				
 		},
 		update: function(dt) {
 			this.applyFriction();
